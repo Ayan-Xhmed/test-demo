@@ -16,6 +16,32 @@ let myObj ={
     age:21
 }
 const myFunction = function(){
-    console.log("Hello world");
-    
+    console.log("Hello world");    
 }
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//there are two types of memory
+//      1.Stack       2.Heap
+//use   Primitive     Non-Primitive
+//      Copy          Reference
+
+// Example stack
+let id1 = 4821
+let id2 = id1
+id2 = 7821
+console.log(id1);
+console.log(id2);
+
+//Example of Heap
+let user1 = {
+    name : "ayan",
+    id : 4821
+}
+let user2 = user1
+user2.id = 7821
+console.log(user1)
+console.log(user2)
+
+
+
