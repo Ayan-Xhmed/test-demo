@@ -38,7 +38,10 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage("hitesh"))
 // console.log(loginUserMessage("hitesh"))
 
+//next video Note
 
+
+// ... <--called rest operater or spread operater
 function calculateCartPrice(val1, val2, ...num1){
     return num1
 }
