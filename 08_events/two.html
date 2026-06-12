@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two</title>
+</head>
+<body style="background-color: #212121;color:  #fff;">
+    <h2>Hello My self Ayan Ahmed</h2>
+    <button id="stop">Stop</button>
+    
+</body>
+
+<script>
+    const sayAyan = function(){
+        console.log("noChange");
+        console.log("ayan")
+    }
+    setTimeout(sayAyan,8000)
+    const changeText = function(){
+        console.log("it is a best series");   
+        document.querySelector('h2').innerHTML = "change the name";
+    }
+    const noChange = setTimeout(changeText,5000);
+
+    document.querySelector('#stop').
+    addEventListener('click',function(){
+        clearTimeout(noChange)
+        console.log("stoped");
+    })
+
+</script>
+</html>

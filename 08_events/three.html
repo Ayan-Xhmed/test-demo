@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three</title>
+</head>
+<body style="background-color: #212121;color:  #fff;">
+    <h2>Hello My self Ayan Ahmed</h2>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    
+</body>
+
+<script>
+    // setInterval(function(){
+    //     console.log("Ayan",Date.now().toLocaleString());
+    //     console.log("Ayan", new Date().toLocaleString());
+    //     console.log("Ayan", new Date().toLocaleTimeString());
+    // },1000)
+
+    let intervalId;
+    document.querySelector('#start').
+    addEventListener('click',function(){
+        if(!intervalId){
+            intervalId = setInterval(function(){
+                console.log("Ayan",new Date().toLocaleDateString());
+                console.log("Ayan",new Date().toLocaleTimeString());
+            },1000)
+            console.log("Started");
+        }
+    });
+    document.querySelector('#stop').
+    addEventListener('click',function(){
+        clearInterval(intervalId)
+        intervalId = null;
+        console.log("stoped");
+    });
+
+    
+    
+</script>
+</html>
